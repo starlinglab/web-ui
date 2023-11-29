@@ -45,11 +45,11 @@ _<info about the environment. Which plugins?>
 ### Component and Plugin
 The work was integrated into two separate Wordpress sites: Black Voice News (BVN) and Mapping Black California (MBC).
 
-For MBC, it was built as a web component so that the Esri team could easily place it inside a lightbox. This makes it a black box that can be dynamically fed different wacz files through the attributes listed above. For the setup, the index .js and .css files were hosted in the Wordpress site by placing them inside the `themes` folder. _<Joe will have further details on the setup i.e. where the service worker file went, whether the web replay ui file had to be hosted somewhere too.>_
+**For MBC**, it was built as a web component so that the Esri team could easily place it inside a lightbox. This makes it a black box that can be dynamically fed different wacz files through the attributes listed above. For the setup, the index .js and .css files were hosted in the Wordpress site by placing them inside the `themes` folder. _<Joe will have further details on the setup i.e. where the service worker file went, whether the web replay ui file had to be hosted somewhere too.>_
 
 The files being used for this are in the `mbc` branch.
 
-On the BVN site, the same component (index .js file, index .css file, replay/sw.js) is wrapped inside a wordpress plugin [found here](https://github.com/starlinglab/bvn-wordpess-plugin/) as this is an easy way to upload and run JavaScript without requiring access to folders behind the scenes. The only addition is `starling-replay-web-page-lightbox.php` that simply defines a shortcode that loads the component and writes out some HTML that displays it with the desired .wacz. This HTML goes into [news articles](https://blackvoicenews.com/2023/11/13/black-california-racism-public-health-crisis/) just like any other wordpress HTML block embedded in between paragraphs.
+On the **BVN site**, the same component (index .js file, index .css file, replay/sw.js) is wrapped inside a wordpress plugin [found here](https://github.com/starlinglab/bvn-wordpess-plugin/) as this is an easy way to upload and run JavaScript without requiring access to folders behind the scenes. The only addition is `starling-replay-web-page-lightbox.php` that simply defines a shortcode that loads the component and writes out some HTML that displays it with the desired .wacz. This HTML goes into [news articles](https://blackvoicenews.com/2023/11/13/black-california-racism-public-health-crisis/) just like any other wordpress HTML block embedded in between paragraphs.
 
 The files being used for this are in the `main` branch.
 
