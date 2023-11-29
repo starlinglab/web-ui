@@ -49,7 +49,7 @@ The work was integrated into two separate Wordpress sites: Black Voice News (BVN
 
 The files being used for this are in the `mbc` branch.
 
-On the **BVN site**, the same component (index .js file, index .css file, replay/sw.js) is wrapped inside a wordpress plugin [found here](https://github.com/starlinglab/bvn-wordpess-plugin/) as this is an easy way to upload and run JavaScript without requiring access to folders behind the scenes. The only addition is `starling-replay-web-page-lightbox.php` that simply defines a shortcode that loads the component and writes out some HTML that displays it with the desired .wacz. This HTML goes into [news articles](https://blackvoicenews.com/2023/11/13/black-california-racism-public-health-crisis/) just like any other wordpress HTML block embedded in between paragraphs.
+On the **BVN site**, the same component (index .js file, index .css file, replay/sw.js) is wrapped inside a [wordpress plugin](https://github.com/starlinglab/bvn-wordpess-plugin/) as this is an easy way to upload and run JavaScript without requiring access to folders behind the scenes. The only addition is `starling-replay-web-page-lightbox.php` that simply defines a shortcode that loads the component and writes out some HTML that displays it with the desired .wacz. This HTML goes into [news articles](https://blackvoicenews.com/2023/11/13/black-california-racism-public-health-crisis/) just like any other wordpress HTML block embedded in between paragraphs.
 
 The files being used for this are in the `main` branch.
 
