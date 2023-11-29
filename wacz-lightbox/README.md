@@ -9,8 +9,6 @@ Load in the index js and css files in `dist/assets/`. These define the `wacz-lig
 
 You need a `/replay/` folder somewhere in the website with the Web Replay service worker `sw.js` file.
 
-You might need to load in the Web Replay `ui.js` file too.
-
 ### Example
 
 The following is a basic embed to show the component:
