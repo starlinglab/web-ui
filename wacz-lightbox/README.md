@@ -11,13 +11,12 @@ You need a `/replay/` folder somewhere in the website with the Web Replay servic
 
 ### Example
 
-The following is a basic embed to show the component:
+The following is a basic embed to show the component. Line 1 loads the index js file, line 2 loads the index css file, line 3 displays the component with the desired .wacz file.
 
 ```
 <script src="https://www.blackvoicenews/path/to/file/index.js"></script>
 <link rel="stylesheet" href="https://www.blackvoicenews/path/to/file/index.css">
 <wacz-lightbox filename=”filename.wacz” path=”https://www.blackvoicenews/path/to/wacz/and/json/files/” replayBase=“https://www.blackvoicenews.com/path/to/replay/“></wacz-lightbox>
-So an example embed HTML would be:
 ```
 
 This setup is very similar to embedding a web archive with replay-web-page, which is done like so:
