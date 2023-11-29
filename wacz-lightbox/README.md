@@ -29,7 +29,7 @@ url="https://www.example.com/path/to/site"></replay-web-page>
 
 More details on the replay-web-page component, which is used as a part of the wacz-lightbox component, can be found in [the replay-web-page docs](https://replayweb.page/docs/embedding).
 
-#### Attributes
+### Attributes
 
 **filename** = .wacz filename e.g. `mono-county-pdf-01-2023-08-25T15-57-33.wacz`  
 **path** = path to .wacz file, relative or absolute e.g. `/assets/` or `https://www.example.com/path/to/file/`  
