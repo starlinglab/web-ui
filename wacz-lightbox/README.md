@@ -36,16 +36,21 @@ More details on the replay-web-page component, which is used as a part of the wa
 **replayBase** = path to sw.js, same as it would be for replay-web-page  
 
 ## Description of Project
-This project was created for a fellowship given by Starling Lab for Data Integrity for a project with [Black Voice News](https://blackvoicenews.com/)'s [Mapping Black California](https://mappingblackca.com/) project, to create an embedded view of almost 350 web archives related to public declartations of racism as a public health crisis.
+This project was created for a fellowship given by Starling Lab for Data Integrity for a project with [Black Voice News](https://blackvoicenews.com/)'s [Mapping Black California/Combating racism](https://combatingracism.com/) project, to create an embedded view of almost 350 web archives related to public declarations of racism as a public health crisis.
 
-We worked with the [Esri](https://www.esri.com/en-us/home) development team to create a map of public declartions, social media, and other types of content found on the web on a Wordpress website, and integrated
+We worked with the [Esri](https://www.esri.com/en-us/home) development team to create a map of public declarations, social media, and other types of content found on the web on a Wordpress website, and integrated
 
 _<info about the environment. Which plugins?>  
 
 ### Component and Plugin
 The work was integrated into two separate Wordpress sites: Black Voice News (BVN) and Mapping Black California (MBC).
 
-**For MBC**, it was built as a web component so that the Esri team could easily place it inside a lightbox. This makes it a black box that can be dynamically fed different wacz files through the attributes listed above. For the setup, the index .js and .css files were hosted in the Wordpress site by placing them inside the `themes` folder. _<Joe will have further details on the setup i.e. where the service worker file went, whether the web replay ui file had to be hosted somewhere too.>_
+**For MBC**, it was built as a web component so that the Esri team could easily place it inside a lightbox. This makes it a black box that can be dynamically fed different wacz files through the attributes listed above.
+
+Some technical information on the setup on the [combating racism site](https://combatingracism.com):
+- `/replay/` containing the Replay Web sw.js file should be in the root of the theme. Replay Web's ui.js file was also in there but might not actually be necessary.
+- The index .js and .css files can live anywhere in the theme folder as long as you enqueue the js and css the way Wordpress recommends: [Enqueue js scripts](https://developer.wordpress.org/reference/functions/wp_enqueue_script/) or [enqueue css styles](https://developer.wordpress.org/reference/functions/wp_enqueue_style/).
+- The \<wacz-lightbox\> can then live anywhere html is allowed (e.g. in a .twig, .html, .php, etc. file). Currently it's in a .twig file in the `/components/` folder.
 
 The files being used for this are in the `mbc` branch.
 
